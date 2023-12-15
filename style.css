@@ -4,6 +4,7 @@
     cursor: default;
 }
 
+
 ul {
     list-style: none;
 }
@@ -18,7 +19,7 @@ a {
 
     --transition-speed: 200ms;
 
-    --green: #1B512D ; /* overide */
+    --green: #1B512D ;
     --black: #0B0500;
     --light-gray: #878284;
     --dark-gray: #363033;
@@ -27,6 +28,7 @@ a {
     --logo: var(--green)
 }
 
+/*
 .nav {
     position: sticky;
     top: 0;
@@ -66,4 +68,76 @@ strong {
     fill: var(--dark-gray);
     height: 4rem;
     width: auto;
+} */
+
+.spacing-little {
+    letter-spacing: 0.10rem;
 }
+.spacing-lot {
+    letter-spacing: 0.20rem;
+}
+.spacing-agressive {
+    letter-spacing: 0.3rem;
+}
+.color-green {
+    --logo: #1B512D;
+}
+.color-green2 {
+    --logo: #1D2B12;
+}
+.color-yellow {
+    --logo: #F7B32B;
+}
+.color-gold {
+    --logo: black;
+}
+.color-orange {
+    --logo: #F58A07;
+}
+
+.bg-black {
+    --logo2: #0B0500;
+}
+.bg-light-gray {
+    --logo2: #878284;
+}
+.bg-dark-gray {
+    --logo2: #363033;
+}
+.bg-white {
+    --logo2: #E0E0E0;
+}
+
+
+.grid {
+    padding: 3rem;
+    display: grid;
+    row-gap: 2rem;
+    background-color: var(--logo2);
+}
+.box {
+    position: relative;
+
+}
+.text {
+    line-height: 6rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--logo);
+    position: relative;
+    z-index: 1;
+}
+.text strong{
+    color: var(--logo2);
+}
+
+.svg {
+    fill: var(--logo);
+    transform: rotate(-80deg);
+    height: 4.5rem;
+    width: auto;
+    position: absolute;
+    top: 0.75rem;
+    left: -1.6rem;
+}
+
