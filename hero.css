@@ -1,0 +1,16 @@
+.header {
+  padding: 3rem;
+  display: grid;
+  background-color: var(--black);
+  row-gap: 2rem;
+}
+
+.name-wrap {
+  display: grid;
+  color: var(--light-gray);
+}
+
+.hero {
+  color: var(--light-gray);
+  row-gap: 10rem;
+}
