@@ -5,7 +5,7 @@
   row-gap: 2rem;
 }
 
-.name-wrap {
+.name {
   display: grid;
   color: var(--light-gray);
 }

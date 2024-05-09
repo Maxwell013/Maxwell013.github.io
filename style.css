@@ -34,7 +34,7 @@ ul {
 }
 
 ::-webkit-scrollbar-track {
-  opacity: 0;
+  background-color: var(--black);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -44,7 +44,7 @@ ul {
 
 h1 {
   font-weight: normal;
-  font-size: 4rem;
+  font-size: 6rem;
   white-space: none;
 }
 
@@ -61,3 +61,16 @@ strong {
 light {
   color: var(--dark-gray);
 }
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
