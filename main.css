@@ -1,0 +1,54 @@
+.main {
+    padding: 5rem;
+    display: grid;
+    row-gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    color: var(--light-gray);
+    width: fit-content;
+}
+
+.project-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-title {
+    color: var(--light-gray);
+    transition: ease-in-out var(--transition-fast);
+}
+
+.project-text {
+    padding: 3rem;
+    border-radius: 3rem;
+    background-color: var(--dark-gray);
+}
+
+.project-text strong{
+    color: var(--light-gray);
+    transition: ease-in-out var(--transition-fast);
+}
+
+.project:hover .project-title{
+    color: var(--accent);
+    transition: ease-in-out var(--transition-slow);
+}
+
+.project:hover strong {
+    color: var(--accent);
+    transition: ease-in-out var(--transition-slow);
+}
+
+.project-icon {
+    align-items: end;
+}
+
+.project-icon svg {
+    height: 40rem;
+}

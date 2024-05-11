@@ -1,7 +1,6 @@
 .header {
-  padding: 3rem;
+  padding: 5rem;
   display: grid;
-  background-color: var(--black);
   row-gap: 2rem;
 }
 
@@ -13,4 +12,12 @@
 .hero {
   color: var(--light-gray);
   row-gap: 10rem;
+}
+
+.hero h1 {
+  animation: 2s ease-out 0s 1 slideIn;
+}
+
+.name h2 {
+  animation: 2s ease-out 0s 1 slideIn;
 }

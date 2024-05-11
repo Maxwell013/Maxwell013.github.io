@@ -13,14 +13,19 @@ html {
   font-size: 16px;
   font-family: "Poppins";
 
-  --transition-fast: 100ms;
-  --transition-medium: 300ms;
+  --transition-fast: 300ms;
   --transition-slow: 500ms;
 
   --black: #0F0F11;
   --dark-gray: #2E2E2E;
   --light-gray: #B1B6BA;
   --accent: #f58a07;
+}
+
+body {
+  background-color: var(--black);
+  display: grid;
+  row-gap: 10rem;
 }
 
 ul {
@@ -53,6 +58,10 @@ h2 {
   font-size: 2rem;
 }
 
+p {
+  font-size: 1.5rem;
+}
+
 strong {
   font-weight: normal;
   color: var(--accent);
@@ -62,15 +71,26 @@ light {
   color: var(--dark-gray);
 }
 
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 800px) {
-  h1 {
-    font-size: 4rem;
+  :root {
+    font-size: 12px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  h1 {
-    font-size: 2rem;
+  :root {
+    font-size: 8px;
   }
 }
 
