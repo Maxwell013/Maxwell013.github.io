@@ -57,6 +57,11 @@
 @media only screen and (max-width: 1500px) {
     .project-icon svg {
         display: none;
+        
+        /* safari */
+        visibility: hidden;
+        width: 0;
+        height: 0;
     }
 
     .main {
