@@ -51,4 +51,15 @@
 
 .project-icon svg {
     height: 40rem;
+    width: 40rem;
+}
+
+@media only screen and (max-width: 1500px) {
+    .project-icon svg {
+        display: none;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
 }
