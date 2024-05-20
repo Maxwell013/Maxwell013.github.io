@@ -3,24 +3,26 @@ html {
   width: 100%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  cursor: default;
-}
-
+/* Variables */
 :root {
   font-size: 16px;
   font-family: "Poppins";
-
+  
   --transition-fast: 300ms;
   --transition-slow: 500ms;
-
+  
   --dark-black: #000;
   --black: #0F0F11;
   --dark-gray: #2E2E2E;
   --light-gray: #B1B6BA;
   --accent: #f58a07;
+}
+
+/* Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
 }
 
 body {
@@ -31,21 +33,6 @@ body {
 
 ul {
   list-style: none;
-}
-
-::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.5rem;
-  z-index: 1;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--black);
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 0.25rem;
-  background-color: var(--dark-gray);
 }
 
 h1 {
@@ -64,14 +51,40 @@ p {
 }
 
 strong {
+  font-size: inherit;
   font-weight: normal;
   color: var(--accent);
 }
 
-light {
+small {
+  font-size: inherit;
+  font-weight: normal;
   color: var(--dark-gray);
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  z-index: 1;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  background-color: var(--dark-gray);
+}
+
+/* Selection */
+::selection {
+  color: var(--dark-black);
+  background-color: var(--light-gray);
+}
+
+/* Transitions */
 @keyframes slideIn {
   0% {
     transform: translateY(1rem);
@@ -83,6 +96,7 @@ light {
   }
 }
 
+/* Font size management*/
 @media only screen and (max-width: 1000px) {
   :root {
     font-size: 12px;

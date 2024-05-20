@@ -1,3 +1,4 @@
+/* Wraps */
 .main {
     padding: 5rem;
     display: grid;
@@ -13,17 +14,18 @@
     width: fit-content;
 }
 
-.project-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* Title */
 .project-title {
     color: var(--light-gray);
     transition: ease-in-out var(--transition-fast);
 }
 
+.project:hover .project-title{
+    color: var(--accent);
+    transition: ease-in-out var(--transition-slow);
+}
+
+/* Text */
 .project-text {
     padding: 3rem;
     border-radius: 3rem;
@@ -35,18 +37,16 @@
     transition: ease-in-out var(--transition-fast);
 }
 
-.project:hover .project-title{
-    color: var(--accent);
-    transition: ease-in-out var(--transition-slow);
-}
-
 .project:hover strong {
     color: var(--accent);
     transition: ease-in-out var(--transition-slow);
 }
 
+/* Icon */
 .project-icon {
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .project-icon svg {
@@ -55,6 +55,7 @@
     width: 40rem;
 }
 
+/* Icon display */
 @media only screen and (max-width: 1500px) {
     .project-icon svg {
         display: none;

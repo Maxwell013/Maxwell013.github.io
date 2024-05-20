@@ -1,9 +1,11 @@
+/* Wraps */
 .header {
   padding: 5rem;
   display: grid;
   row-gap: 2rem;
 }
 
+/* Name */
 .name {
   display: grid;
   color: var(--light-gray);
@@ -11,15 +13,16 @@
   font-size: 2rem;
 }
 
+.name {
+  animation: 2s ease-out 0s 1 slideIn;
+}
+
+/* Hero Text */
 .hero {
   color: var(--light-gray);
   row-gap: 10rem;
 }
 
 .hero h1 {
-  animation: 2s ease-out 0s 1 slideIn;
-}
-
-.name h2 {
   animation: 2s ease-out 0s 1 slideIn;
 }
