@@ -46,10 +46,11 @@
 }
 
 .project-icon {
-    align-items: end;
+    align-items: center;
 }
 
 .project-icon svg {
+    fill: var(--dark-black);
     height: 40rem;
     width: 40rem;
 }
