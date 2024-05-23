@@ -70,3 +70,12 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Touch screens */
+@media only screen and (max-width: 1000px) {
+    .project-text strong,
+    .project-title{
+        color: var(--accent);
+        transition: none;
+    }
+}

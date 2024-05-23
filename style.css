@@ -15,14 +15,7 @@ html {
   --black: #0F0F11;
   --dark-gray: #2E2E2E;
   --light-gray: #B1B6BA;
-  --accent: #f58a07;
-  /*   
-      #F8333C
-      #28965A
-      #3B60E4
-      #D35269
-      #0E7C7B
-  */
+  --accent: none;
 }
 
 /* Defaults */
@@ -61,6 +54,7 @@ strong {
   font-size: inherit;
   font-weight: normal;
   color: var(--accent);
+  /* transition: color var(--transition-slow); */
 }
 
 small {
