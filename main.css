@@ -2,7 +2,7 @@
 .main {
     padding: 5rem;
     display: grid;
-    row-gap: 5rem;
+    row-gap: 10rem;
     grid-template-columns: 1fr 1fr;
 }
 
