@@ -72,7 +72,7 @@
 }
 
 /* Touch screens */
-@media only screen and (max-width: 1000px) {
+@media (pointer: coarse) {
     .project-text strong,
     .project-title{
         color: var(--accent);
